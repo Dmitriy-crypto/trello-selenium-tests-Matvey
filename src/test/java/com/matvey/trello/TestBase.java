@@ -22,20 +22,6 @@ public class TestBase {
         wd.get(url);
     }
 
-    public void fillLoginForm(String login, String password) throws InterruptedException {
-        typeLogin(login);
-        Thread.sleep(5000);
-        if(wd.findElement(By.id("password")).isDisplayed()){
-            typePassword(password);
-        }
-        wd.findElement(By.id("login")).click();
-        if(isElementPresent(By.id("login-submit"))){
-            wd.findElement(By.id("login-submit")).click();
-            typePassword("7Ig%20K8");
-            wd.findElement(By.id("login-submit")).click();
-        }
-    }
-
     public void typePassword(String password) {
         wd.findElement(By.id("password")).click();
         wd.findElement(By.id("password")).clear();
@@ -57,5 +43,21 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {wd.quit();
+    }
+
+    public void pause(int millis) throws InterruptedException {
+        Thread.sleep(millis);
+    }
+
+    public void ifClause(String password) {
+        if(wd.findElement(By.id("password")).isDisplayed()){
+            typePassword(password);
+        }
+        wd.findElement(By.id("login")).click();
+        if(isElementPresent(By.id("login-submit"))){
+            wd.findElement(By.id("login-submit")).click();
+            typePassword("7Ig%20K8");
+            wd.findElement(By.id("login-submit")).click();
+        }
     }
 }

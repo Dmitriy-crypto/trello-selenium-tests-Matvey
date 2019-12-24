@@ -1,5 +1,6 @@
 package com.matvey.trello;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase{
@@ -15,7 +16,14 @@ public class LoginTest extends TestBase{
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
 
         }
+
+    public void fillLoginForm(String login, String password) throws InterruptedException {
+        typeLogin(login);
+        pause(5000);
+        ifClause(password);
     }
+
+}
 
 
 //trello buttons to create a board:
