@@ -10,9 +10,8 @@ public class LoginTest extends TestBase{
         clickLoginLink("[href='/login']");
     }
 
-
     public void clickLoginLink(String selector) throws InterruptedException {
-        click(selector);
+        click(By.cssSelector(selector));
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
 
         }

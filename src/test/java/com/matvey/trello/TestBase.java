@@ -34,10 +34,6 @@ public class TestBase {
         wd.findElement(By.id("user")).sendKeys(login);
     }
 
-    public void click(String cssSelector) {
-        wd.findElement(By.cssSelector(cssSelector)).click();
-    }
-
     public boolean isElementPresent(By locator){ return wd.findElements(locator).size()>0;
     }
 
@@ -59,5 +55,9 @@ public class TestBase {
             typePassword("7Ig%20K8");
             wd.findElement(By.id("login-submit")).click();
         }
+    }
+
+    public void click(By selector) {
+        wd.findElement(selector).click();
     }
 }
