@@ -1,5 +1,6 @@
 package com.matvey.trello;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,9 @@ public class LoginTest extends TestBase{
         typeLogin(login);
         pause(5000);
         ifClause(password);
+        pause(8000);
+        Assert.assertTrue(isElementPresent
+                (By.cssSelector("[data-test-id='header-member-menu-button']")));
     }
 
 }
