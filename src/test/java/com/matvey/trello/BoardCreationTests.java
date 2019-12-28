@@ -18,7 +18,7 @@ public class BoardCreationTests extends TestBase {
         trelloLoginButton();
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
         clickCreateNewBoard();
-        fillBoardName("Board from main page");
+        fillBoardName("Board from main page"+System.currentTimeMillis());
         choosePublicBoard();
         submitCreateBoard();
 
@@ -29,7 +29,7 @@ public class BoardCreationTests extends TestBase {
         trelloLoginButton();
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
         addNewBoard();
-        fillBoardName("Board from header");
+        fillBoardName("Board from header"+System.currentTimeMillis());
         chooseAddPublicBoard();
         submitCreateBoard();
 

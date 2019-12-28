@@ -111,9 +111,9 @@ public class TestBase {
         click(By.xpath("//input[@type='submit']"));
     }
 
-    public void fillBoardName(String text) {
+    public void fillBoardName(String boardName) {
         click(By.xpath("//input[@placeholder='Add board title']"));
-        type(By.xpath("//input[@placeholder='Add board title']"), text);
+        type(By.xpath("//input[@placeholder='Add board title']"), boardName);
     }
 
     public void submitCreateBoard() {
