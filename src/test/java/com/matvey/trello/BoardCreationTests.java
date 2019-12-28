@@ -13,7 +13,7 @@ public class BoardCreationTests extends TestBase {
         }
     }
 
-    @Test//(priority = 1) doesn't work
+    @Test//(priority = 1) не фурычит :) запускает сначала header
     public void testCreateBoardFromMainPage() throws InterruptedException {
         trelloLoginButton();
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
@@ -24,7 +24,7 @@ public class BoardCreationTests extends TestBase {
 
     }
 
-    @Test//(priority = 2) doesn't work
+    @Test//(priority = 2)
     public void testCreateBoardFromHeader() throws InterruptedException {
         trelloLoginButton();
         fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
@@ -37,6 +37,6 @@ public class BoardCreationTests extends TestBase {
 
 }
 
-
+// Tried to cut logout() method and paste it into Afterclass in TestBase - test drops at the very end
 
 
