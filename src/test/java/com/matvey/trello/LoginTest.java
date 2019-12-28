@@ -2,34 +2,37 @@ package com.matvey.trello;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestBase{
+public class LoginTest extends TestBase {
+    @BeforeMethod
+    public void ensurePreconditions(){
+        if(isAvatarPresent()){
+            logout();
+        }
+    }
 
     @Test
-    public void testLogInWithAtlassianAcc() throws InterruptedException {
-        clickLoginLink("[href='/login']");
+
+    public void testLogInWithAtlassianAcc()  {
+        trelloLoginButton();
+
     }
 
-    public void clickLoginLink(String selector) throws InterruptedException {
-        click(By.cssSelector(selector));
-        fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
 
-        }
-
-    public void fillLoginForm(String login, String password) throws InterruptedException {
-        typeLogin(login);
-        pause(5000);
-        ifClause(password);
+    @Test(enabled = false) //negative test
+    public void negativeTestLogInWithAtlassianAcc() throws InterruptedException {
+        trelloLoginButton();
+        fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
         pause(8000);
-        Assert.assertTrue(isElementPresent
-                (By.cssSelector("[data-test-id='header-member-menu-button']")));
-    }
+        Assert.assertTrue(isAvatarPresent());
 
+    }
 }
 
 
-//trello buttons to create a board:
+//Trello buttons to create a board:
 
 //.board-tile mod-add - Create new board button or //span[@name='add'] and then ???
 
