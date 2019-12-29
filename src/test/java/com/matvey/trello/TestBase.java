@@ -135,4 +135,11 @@ public class TestBase {
         click(By.xpath("//span[@name='add']"));
         click(By.xpath("//span[@name='board']/..//p"));
     }
+
+    public void loginTrello(String login, String password) throws InterruptedException {
+        trelloLoginButton();
+        fillLoginForm(login, password);
+        pause(8000);
+        Assert.assertTrue(isAvatarPresent());
+    }
 }

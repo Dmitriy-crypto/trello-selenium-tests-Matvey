@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 public class BoardCreationTests extends TestBase {
 
     @BeforeMethod
-    public void ensurePreconditions() {
-        if (isAvatarPresent()) {
-            logout();
+    public void ensurePreconditions() throws InterruptedException {
+        if (!isAvatarPresent()) {
+            loginTrello("mebelyakov@gmail.com","7Ig%20K8");
         }
     }
 
