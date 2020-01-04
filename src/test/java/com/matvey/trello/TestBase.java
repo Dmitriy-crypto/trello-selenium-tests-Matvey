@@ -5,17 +5,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-    WebDriver wd;
+     static WebDriver wd;
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp() {
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         openSite("https://trello.com/");
     }
 
@@ -37,7 +39,7 @@ public class TestBase {
     public boolean isElementPresent(By locator){ return wd.findElements(locator).size()>0;
     }
 
-    @AfterClass
+    @AfterSuite
 
     public void tearDown() {wd.quit();
     }
@@ -86,7 +88,7 @@ public class TestBase {
         pause(4000);
         ifClause(password);
         pause(4000);
-        Assert.assertTrue(isAvatarPresent());
+       // Assert.assertTrue(isAvatarPresent());
     }
 
 
@@ -136,10 +138,39 @@ public class TestBase {
         click(By.xpath("//span[@name='board']/..//p"));
     }
 
-    public void loginTrello(String login, String password) throws InterruptedException {
-        trelloLoginButton();
-        fillLoginForm(login, password);
-        pause(8000);
-        Assert.assertTrue(isAvatarPresent());
+    public void returnToHomePage() {
+        click(By.name("house"));
+        click(By.name("house"));
+    }
+
+    public int getBoardsCount(){
+            return wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size();
+    }
+
+    public boolean moreButtonPresent() {
+        return isElementPresent
+                (By.cssSelector(".board-menu-navigation-item-link.js-open-more"));
+    }
+
+    public void permanentlyDeleteBoard() throws InterruptedException {
+        click(By.cssSelector(".board-menu-navigation-item-link.js-close-board"));
+        click(By.cssSelector("[value='Close']"));
+        pause(3000);
+        click(By.cssSelector(".quiet.js-delete"));
+        click(By.cssSelector("[value='Delete']"));
+    }
+
+    public void moreButton() {
+        click(By.cssSelector(".board-menu-navigation-item-link.js-open-more"));
+    }
+
+    public void goBack() {
+        click(By.cssSelector("[title='Go back.']"));
+    }
+
+    public void clickLastBoard() {
+        wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).
+                get(wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 2).click();
     }
 }
+

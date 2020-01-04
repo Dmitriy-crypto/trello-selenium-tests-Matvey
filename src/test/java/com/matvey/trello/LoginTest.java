@@ -1,6 +1,7 @@
 package com.matvey.trello;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,19 +15,22 @@ public class LoginTest extends TestBase {
 
     @Test
 
-    public void testLogInWithAtlassianAcc()  {
+    public void testLogInWithAtlassianAcc() throws InterruptedException {
         trelloLoginButton();
-
-
+        fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+pause(5000);
+Assert.assertTrue(isAvatarPresent());
     }
 
 
     @Test(enabled = false) //negative test
     public void negativeTestLogInWithAtlassianAcc() throws InterruptedException {
-        loginTrello("melieblinggg@gmail.com", "7Ig%20K8");
+        trelloLoginButton();
+        fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
+        pause(8000);
+        Assert.assertTrue(isAvatarPresent());
 
     }
-
 }
 
 
