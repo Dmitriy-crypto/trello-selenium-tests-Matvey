@@ -1,12 +1,13 @@
 package com.matvey.trello;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import java.util.concurrent.TimeUnit;
@@ -16,10 +17,26 @@ public class TestBase {
 
     @BeforeSuite
     public void setUp() {
+        String browser = System.getProperty("browser",BrowserType.FIREFOX);
+        if(browser.equals(BrowserType.CHROME)){
+
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        }
+        else
+            if(browser.equals(BrowserType.FIREFOX)){
+            wd = new FirefoxDriver();
+        }
+            else
+            if(browser.equals(BrowserType.EDGE)){
+                wd = new EdgeDriver();
+            }
+        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         openSite("https://trello.com/");
     }
+
+
+
+
 
     public void openSite(String url) {wd.get(url);
     }
@@ -48,13 +65,15 @@ public class TestBase {
         Thread.sleep(millis);
     }
 
-    public void ifClause(String password) {
+    public void ifClause(String password) throws InterruptedException {
         if(wd.findElement(By.id("password")).isDisplayed()){
+            pause(5000);
             typePassword(password);
         }
         wd.findElement(By.id("login")).click();
         if(isElementPresent(By.id("login-submit"))){
             wd.findElement(By.id("login-submit")).click();
+            pause(5000);
             typePassword("7Ig%20K8");
             wd.findElement(By.id("login-submit")).click();
         }
@@ -85,9 +104,9 @@ public class TestBase {
 
     public void fillLoginForm(String login, String password) throws InterruptedException {
         typeLogin(login);
-        pause(4000);
+        pause(5000);
         ifClause(password);
-        pause(4000);
+        pause(5000);
        // Assert.assertTrue(isAvatarPresent());
     }
 
@@ -171,6 +190,51 @@ public class TestBase {
     public void clickLastBoard() {
         wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).
                 get(wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 2).click();
+    }
+
+    public void deleteLastBoard() throws InterruptedException {
+        int before = getBoardsCount();
+        if (before <= 1) {
+            System.out.println("No boards found");
+        } else {
+            clickLastBoard();
+//            if(!menuButtonPresent()){
+//                moreButton();                  clickMenuButton();     add another if
+//            }else
+            if (!moreButtonPresent()) {
+                goBack();
+                moreButton();
+            } else
+                moreButton();
+            permanentlyDeleteBoard();
+            pause(3000);
+            returnToHomePage();
+            int actualRes = getBoardsCount();
+            int expectedRes = before - 1;
+            Assert.assertEquals(actualRes, expectedRes);
+        }
+    }
+
+    public void clickMenuButton() {
+        click(By.cssSelector(".js-show-sidebar"));
+    }
+
+    public boolean menuButtonPresent() {
+        return isElementPresent(
+   (By.cssSelector(".js-show-sidebar")));
+    }
+
+    public void createBoardFromMainPage() throws InterruptedException {
+        int before = getBoardsCount();
+        clickCreateNewBoard();
+        fillBoardName("Board from main page"+System.currentTimeMillis());
+        choosePublicBoard();
+        submitCreateBoard();
+        pause(5000);
+        returnToHomePage();
+        int actualRes = getBoardsCount();
+        int expectedRes = before+1;
+        Assert.assertEquals(actualRes,expectedRes);
     }
 }
 

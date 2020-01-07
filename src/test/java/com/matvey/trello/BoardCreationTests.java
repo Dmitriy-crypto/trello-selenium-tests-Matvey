@@ -19,16 +19,11 @@ public class BoardCreationTests extends TestBase {
     public void testCreateBoardFromMainPage() throws InterruptedException {
 
 
-        int before = getBoardsCount();
-        clickCreateNewBoard();
-        fillBoardName("Board from main page"+System.currentTimeMillis());
-        choosePublicBoard();
-        submitCreateBoard();
-        pause(5000);
-        returnToHomePage();
-        int actualRes = getBoardsCount();
-        int expectedRes = before+1;
-        Assert.assertEquals(actualRes,expectedRes);
+        createBoardFromMainPage();
+//        int boardsCount = getBoardsCount()
+//        while(boardsCount>5){deleteBoards
+//
+//        }
     }
 
     @Test//(priority = 2)
