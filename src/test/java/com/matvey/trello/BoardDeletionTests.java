@@ -8,26 +8,26 @@ public class BoardDeletionTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (!isAvatarPresent()) {
-            trelloLoginButton();
-            fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
-            pause(8000);
+        if (!app.isAvatarPresent()) {
+            app.trelloLoginButton();
+            app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+            app.pause(8000);
 
         }
     }
 
     @Test
     public void testDeleteLastBoard() throws InterruptedException {
-        createBoardFromMainPage();
-        deleteLastBoard();
+        app.createBoardFromMainPage();
+        app.deleteLastBoard();
     }
 
     @AfterClass
     public void postActions() throws InterruptedException {
-        int boardsCount = getBoardsCount();
+        int boardsCount = app.getBoardsCount();
         while(boardsCount>4){
-            deleteLastBoard();
-            boardsCount = getBoardsCount();
+            app.deleteLastBoard();
+            boardsCount = app.getBoardsCount();
         }
 }
 
