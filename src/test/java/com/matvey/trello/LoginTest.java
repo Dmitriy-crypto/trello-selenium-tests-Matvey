@@ -1,33 +1,34 @@
 package com.matvey.trello;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
-        if(app.isAvatarPresent()){
-            app.logout();
+        if(isAvatarPresent()){
+            logout();
         }
     }
 
     @Test
 
     public void testLogInWithAtlassianAcc() throws InterruptedException {
-        app.trelloLoginButton();
-        app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
-app.pause(5000);
-Assert.assertTrue(app.isAvatarPresent());
+        trelloLoginButton();
+        fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+pause(5000);
+Assert.assertTrue(isAvatarPresent());
     }
 
 
     @Test(enabled = false) //negative test
     public void negativeTestLogInWithAtlassianAcc() throws InterruptedException {
-        app.trelloLoginButton();
-        app.fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
-        app.pause(8000);
-        Assert.assertTrue(app.isAvatarPresent());
+        trelloLoginButton();
+        fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
+        pause(8000);
+        Assert.assertTrue(isAvatarPresent());
 
     }
 }
