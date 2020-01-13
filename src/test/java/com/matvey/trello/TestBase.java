@@ -1,5 +1,7 @@
 package com.matvey.trello;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -18,7 +20,6 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
-
 
 }
 

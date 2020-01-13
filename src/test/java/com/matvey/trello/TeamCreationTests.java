@@ -1,10 +1,12 @@
 package com.matvey.trello;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class BoardDeletionTests extends TestBase {
+public class TeamCreationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
@@ -17,17 +19,18 @@ public class BoardDeletionTests extends TestBase {
     }
 
     @Test
-    public void testDeleteLastBoard() throws InterruptedException {
-        app.createBoardFromMainPage();
-        app.deleteLastBoard();
+    public void testCreateTeamFromMainPage() throws InterruptedException {
+        app.createTeamFromMainPage();
+
     }
 
     @AfterClass
     public void postActions() throws InterruptedException {
-        int boardsCount = app.getBoardsCount();
-        if(boardsCount>4){
-            app.deleteLastBoard();
+        int teamsCount = app.getTeamsCount();
+        if(teamsCount>2){
+            app.deleteLastTeam();
         }
+
 }
 
 }
