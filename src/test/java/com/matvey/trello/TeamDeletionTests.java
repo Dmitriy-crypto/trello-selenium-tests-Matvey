@@ -20,6 +20,7 @@ public class TeamDeletionTests extends TestBase {
     @Test
     public void testDeleteLastTeam() throws InterruptedException {
         app.teamHelper.createTeamFromMainPage();
+        app.pause(4000);
         app.teamHelper.deleteLastTeam();
 
     }
@@ -27,6 +28,7 @@ public class TeamDeletionTests extends TestBase {
     @AfterClass
     public void postActions() throws InterruptedException {
         int teamsCount = app.teamHelper.getTeamsCount();
+        app.pause(4000);
         if(teamsCount>2){
             app.teamHelper.deleteLastTeam();
         }

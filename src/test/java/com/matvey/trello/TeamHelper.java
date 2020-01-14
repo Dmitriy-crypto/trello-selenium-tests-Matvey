@@ -56,18 +56,20 @@ public class TeamHelper extends HelperBase{
             System.out.println("No teams found");
         } else
             clickLastTeam();
-        app.pause(2000);
+        app.pause(4000);
         clickTeamSettings();
-        app.pause(2000);
+        app.pause(4000);
         clickDeleteTeam();
+        app.pause(2000);
         app.returnToHomePage();
         int actualRes = getTeamsCount();
         int expectedRes = before - 1;
         Assert.assertEquals(actualRes, expectedRes);
     }
 
-    public void clickDeleteTeam() {
+    public void clickDeleteTeam() throws InterruptedException {
         app.click(By.cssSelector(".quiet-button"));
+        app.pause(1000);
         clickSubmitTeamDelete();
     }
 
