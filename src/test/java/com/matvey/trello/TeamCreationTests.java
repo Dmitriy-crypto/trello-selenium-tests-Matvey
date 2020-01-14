@@ -10,9 +10,9 @@ public class TeamCreationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (!app.isAvatarPresent()) {
-            app.trelloLoginButton();
-            app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+        if (!app.sessionHelper.isAvatarPresent()) {
+            app.sessionHelper.trelloLoginButton();
+            app.sessionHelper.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
             app.pause(5000);
 
         }
@@ -20,15 +20,15 @@ public class TeamCreationTests extends TestBase {
 
     @Test
     public void testCreateTeamFromMainPage() throws InterruptedException {
-        app.createTeamFromMainPage();
+        app.teamHelper.createTeamFromMainPage();
 
     }
 
     @AfterClass
     public void postActions() throws InterruptedException {
-        int teamsCount = app.getTeamsCount();
+        int teamsCount = app.teamHelper.getTeamsCount();
         if(teamsCount>2){
-            app.deleteLastTeam();
+            app.teamHelper.deleteLastTeam();
         }
 
 }

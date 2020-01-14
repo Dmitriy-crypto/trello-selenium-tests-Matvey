@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 public class TeamDeletionTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (!app.isAvatarPresent()) {
-            app.trelloLoginButton();
-            app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+        if (!app.sessionHelper.isAvatarPresent()) {
+            app.sessionHelper.trelloLoginButton();
+            app.sessionHelper.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
             app.pause(5000);
 
         }
@@ -19,16 +19,16 @@ public class TeamDeletionTests extends TestBase {
 
     @Test
     public void testDeleteLastTeam() throws InterruptedException {
-        app.createTeamFromMainPage();
-        app.deleteLastTeam();
+        app.teamHelper.createTeamFromMainPage();
+        app.teamHelper.deleteLastTeam();
 
     }
 
     @AfterClass
     public void postActions() throws InterruptedException {
-        int teamsCount = app.getTeamsCount();
+        int teamsCount = app.teamHelper.getTeamsCount();
         if(teamsCount>2){
-            app.deleteLastTeam();
+            app.teamHelper.deleteLastTeam();
         }
     }
 

@@ -7,27 +7,27 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
-        if(app.isAvatarPresent()){
-            app.logout();
+        if(app.sessionHelper.isAvatarPresent()){
+            app.sessionHelper.logout();
         }
     }
 
     @Test
 
     public void testLogInWithAtlassianAcc() throws InterruptedException {
-        app.trelloLoginButton();
-        app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+        app.sessionHelper.trelloLoginButton();
+        app.sessionHelper.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
 app.pause(5000);
-Assert.assertTrue(app.isAvatarPresent());
+Assert.assertTrue(app.sessionHelper.isAvatarPresent());
     }
 
 
     @Test(enabled = false) //negative test
     public void negativeTestLogInWithAtlassianAcc() throws InterruptedException {
-        app.trelloLoginButton();
-        app.fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
+        app.sessionHelper.trelloLoginButton();
+        app.sessionHelper.fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
         app.pause(8000);
-        Assert.assertTrue(app.isAvatarPresent());
+        Assert.assertTrue(app.sessionHelper.isAvatarPresent());
 
     }
 }

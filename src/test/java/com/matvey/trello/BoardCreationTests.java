@@ -8,9 +8,9 @@ public class BoardCreationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (!app.isAvatarPresent()) {
-            app.trelloLoginButton();
-            app.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+        if (!app.sessionHelper.isAvatarPresent()) {
+            app.sessionHelper.trelloLoginButton();
+            app.sessionHelper.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
             app.pause(5000);}
     }
 
@@ -18,23 +18,23 @@ public class BoardCreationTests extends TestBase {
     public void testCreateBoardFromMainPage() throws InterruptedException {
 
 
-        app.createBoardFromMainPage();
-//        int boardsCount = getBoardsCount()
-//        while(boardsCount>5){deleteBoards
-//
-//        }
+        app.boardHelper.createBoardFromMainPage();
+        int boardsCount = app.boardHelper.getBoardsCount();
+        while(boardsCount>5){app.boardHelper.deleteLastBoard();
+
+        }
     }
 
-    @Test//(priority = 2)
+    @Test (enabled = false)
     public void testCreateBoardFromHeader() throws InterruptedException {
-        int before = app.getBoardsCount();
-        app.addNewBoard();
-        app.fillBoardName("Board from header"+System.currentTimeMillis());
-        app.chooseAddPublicBoard();
-        app.submitCreateBoard();
+        int before = app.boardHelper.getBoardsCount();
+        app.boardHelper.addNewBoard();
+        app.boardHelper.fillBoardName("Board from header"+System.currentTimeMillis());
+        app.boardHelper.chooseAddPublicBoard();
+        app.boardHelper.submitCreateBoard();
         app.pause(5000);
         app.returnToHomePage();
-        int after = app.getBoardsCount();
+        int after = app.boardHelper.getBoardsCount();
         Assert.assertEquals(after,before+1);
 
     }
