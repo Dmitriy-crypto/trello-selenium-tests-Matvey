@@ -1,4 +1,4 @@
-package com.matvey.trello;
+package com.matvey.trello.tests;
 
 import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -7,27 +7,27 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
-        if(app.sessionHelper.isAvatarPresent()){
-            app.sessionHelper.logout();
+        if(app.getSession().isAvatarPresent()){
+            app.getSession().logout();
         }
     }
 
     @Test
 
     public void testLogInWithAtlassianAcc() throws InterruptedException {
-        app.sessionHelper.trelloLoginButton();
-        app.sessionHelper.fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
-app.pause(5000);
-Assert.assertTrue(app.sessionHelper.isAvatarPresent());
+        app.getSession().trelloLoginButton();
+        app.getSession().fillLoginForm("meliebling@gmail.com", "7Ig%20K8");
+        app.getSession().pause(5000);
+Assert.assertTrue(app.getSession().isAvatarPresent());
     }
 
 
     @Test(enabled = false) //negative test
     public void negativeTestLogInWithAtlassianAcc() throws InterruptedException {
-        app.sessionHelper.trelloLoginButton();
-        app.sessionHelper.fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
-        app.pause(8000);
-        Assert.assertTrue(app.sessionHelper.isAvatarPresent());
+        app.getSession().trelloLoginButton();
+        app.getSession().fillLoginForm("melieblinggg@gmail.com", "7Ig%20K8");
+        app.getSession().pause(8000);
+        Assert.assertTrue(app.getSession().isAvatarPresent());
 
     }
 }

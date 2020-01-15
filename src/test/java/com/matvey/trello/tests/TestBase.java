@@ -1,7 +1,6 @@
-package com.matvey.trello;
+package com.matvey.trello.tests;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import com.matvey.trello.fw.ApplicationManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 

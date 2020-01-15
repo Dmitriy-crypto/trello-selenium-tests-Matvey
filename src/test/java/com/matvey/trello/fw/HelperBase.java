@@ -1,4 +1,4 @@
-package com.matvey.trello;
+package com.matvey.trello.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +9,7 @@ public class HelperBase {
     public HelperBase(WebDriver wd) {
         this.wd = wd;
     }
+
 
     public void pause(int millis) throws InterruptedException {
         Thread.sleep(millis);
