@@ -1,5 +1,6 @@
 package com.matvey.trello.tests;
 
+import com.matvey.trello.model.BoardData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class BoardCreationTests extends TestBase {
     public void testCreateBoardFromHeader() throws InterruptedException {
         int before = app.getBoard().getBoardsCount();
         app.getBoard().addNewBoard();
-        app.getBoard().fillBoardName("Board from header"+System.currentTimeMillis());
+        app.getBoard().fillBoardName(new BoardData("Board from header" + System.currentTimeMillis()));
         app.getBoard().chooseAddPublicBoard();
         app.getBoard().submitCreateBoard();
         app.getBoard().pause(5000);

@@ -1,4 +1,4 @@
-package com.matvey.trello.fw;
+package com.matvey.trello.manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,9 +22,11 @@ public class HelperBase {
     }
 
     public void type(By selector, String text) {
+        if(text != null){
         wd.findElement(selector).click();
         wd.findElement(selector).clear();
         wd.findElement(selector).sendKeys(text);
+    }
     }
 
     public void returnToHomePage() {

@@ -1,5 +1,6 @@
-package com.matvey.trello.fw;
+package com.matvey.trello.manager;
 
+import com.matvey.trello.model.BoardData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -31,9 +32,8 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector(".js-confirm.full.primary"));
     }
 
-    public void fillBoardName(String boardName) {
-        click(By.xpath("//input[@placeholder='Add board title']"));
-        type(By.xpath("//input[@placeholder='Add board title']"), boardName);
+    public void fillBoardName(BoardData boardData) {
+        type(By.xpath("//input[@placeholder='Add board title']"), boardData.getBoardName());
     }
 
     public void submitCreateBoard() {
@@ -97,7 +97,7 @@ public class BoardHelper extends HelperBase{
     public void createBoardFromMainPage() throws InterruptedException {
         int before = getBoardsCount();
         clickCreateNewBoard();
-        fillBoardName("Board from main page"+System.currentTimeMillis());
+        fillBoardName(new BoardData("Board from main page" + System.currentTimeMillis()));
         choosePublicBoard();
         pause(2000);
         submitCreateBoard();

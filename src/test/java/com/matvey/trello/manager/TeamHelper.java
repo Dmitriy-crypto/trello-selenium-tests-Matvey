@@ -1,5 +1,6 @@
-package com.matvey.trello.fw;
+package com.matvey.trello.manager;
 
+import com.matvey.trello.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -13,8 +14,9 @@ public class TeamHelper extends HelperBase{
     public void createTeamFromMainPage() throws InterruptedException {
         int before = getTeamsCount();
         clickCreateTeam();
-        fillTeamName();
-        fillTeamDescription();
+        fillTeamCreationForm(new TeamData()
+                        .withTeamName("teamFromMainMenu"+ System.currentTimeMillis())
+                .withTeamDescription("Team #" + System.currentTimeMillis()));
         pause(2000);
         clickSubmit();
         pause(2000);
@@ -26,6 +28,11 @@ public class TeamHelper extends HelperBase{
 
     }
 
+    public void fillTeamCreationForm(TeamData teamData) {
+        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), teamData.getTeamName());
+        type(By.cssSelector("._15aIJYNKhrO4vB"), teamData.getTeamDescription());
+    }
+
     public int getTeamsCount() {
         return wd.findElements(By.xpath("//*[@class='_33CvMKqfH4Yf0j']/../../li")).size();
 
@@ -33,14 +40,6 @@ public class TeamHelper extends HelperBase{
 
     public void laterButton() {
         click(By.cssSelector(".eg0KI5SqghoOFd"));
-    }
-
-    public void fillTeamDescription() {
-        type(By.cssSelector("._15aIJYNKhrO4vB"), "Team #" + System.currentTimeMillis());
-    }
-
-    public void fillTeamName() {
-        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), "teamFromMainMenu" + System.currentTimeMillis());
     }
 
     public void clickCreateTeam() {

@@ -1,4 +1,4 @@
-package com.matvey.trello.fw;
+package com.matvey.trello.manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
