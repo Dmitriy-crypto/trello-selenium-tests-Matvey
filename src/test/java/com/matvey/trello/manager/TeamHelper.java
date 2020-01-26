@@ -15,14 +15,15 @@ public class TeamHelper extends HelperBase{
         int before = getTeamsCount();
         clickCreateTeam();
         fillTeamCreationForm(new TeamData()
-                        .withTeamName("teamFromMainMenu"+ System.currentTimeMillis())
-                .withTeamDescription("Team #" + System.currentTimeMillis()));
+                        .withTeamName("teamName")
+                .withTeamDescription("teamDescription"));
         pause(2000);
         clickSubmit();
         pause(2000);
         laterButton();
         pause(2000);
         returnToHomePage();
+        pause(2000);
         int after = getTeamsCount();
         Assert.assertEquals(after, before + 1);
 
