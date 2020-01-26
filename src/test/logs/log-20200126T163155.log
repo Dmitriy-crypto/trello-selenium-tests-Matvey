@@ -1,0 +1,6 @@
+2020-01-26 16:32:04,478 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:23] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@5a6f70ca]
+2020-01-26 16:33:01,373 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:30] Stop test testCreateTeamFromMainPageWithCSV
+2020-01-26 16:33:01,378 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:23] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@639db5b0]
+2020-01-26 16:33:18,488 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:30] Stop test testCreateTeamFromMainPageWithCSV
+2020-01-26 16:33:18,502 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:23] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@45ca07d]
+2020-01-26 16:33:37,098 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:30] Stop test testCreateTeamFromMainPageWithCSV
