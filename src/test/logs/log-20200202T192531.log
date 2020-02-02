@@ -1,0 +1,100 @@
+2020-02-02 19:25:43,678 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-02 19:26:57,915 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateBoardFromMainPage Failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".board-menu-navigation-item-link.js-open-more"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+*** Element info: {Using=css selector, value=.board-menu-navigation-item-link.js-open-more}
+2020-02-02 19:26:58,290 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664418268.png
+2020-02-02 19:26:58,291 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateBoardFromMainPage
+2020-02-02 19:26:58,292 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastBoardwith parameters []
+2020-02-02 19:27:18,416 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testDeleteLastBoard Failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='board-tile mod-add']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+*** Element info: {Using=xpath, value=//div[@class='board-tile mod-add']}
+2020-02-02 19:27:18,854 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664438853.png
+2020-02-02 19:27:18,855 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastBoard
+2020-02-02 19:27:28,874 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testLogInWithAtlassianAccwith parameters []
+2020-02-02 19:28:01,484 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testLogInWithAtlassianAcc Passed successfully
+2020-02-02 19:28:01,486 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testLogInWithAtlassianAcc
+2020-02-02 19:28:01,497 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@199be0e2]
+2020-02-02 19:28:16,074 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateTeamFromMainPageWithCSV Failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-team-type-input']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+*** Element info: {Using=css selector, value=[data-test-id='header-create-team-type-input']}
+2020-02-02 19:28:16,440 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664496439.png
+2020-02-02 19:28:16,442 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV
+2020-02-02 19:28:16,442 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@1c7541ce]
+2020-02-02 19:28:19,693 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateTeamFromMainPageWithCSV Failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="icon-add icon-sm _2aV_KY1gTq1qWc"></span> is not clickable at point (245, 213). Other element would receive the click: <form class="_2vrbr9OyhcQOwQ">...</form>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+2020-02-02 19:28:20,062 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664500060.png
+2020-02-02 19:28:20,063 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV
+2020-02-02 19:28:20,064 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@831cb2d]
+2020-02-02 19:28:23,247 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateTeamFromMainPageWithCSV Failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="icon-add icon-sm _2aV_KY1gTq1qWc"></span> is not clickable at point (245, 213). Other element would receive the click: <form class="_2vrbr9OyhcQOwQ">...</form>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+2020-02-02 19:28:23,604 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664503603.png
+2020-02-02 19:28:23,606 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV
+2020-02-02 19:28:24,778 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastTeamwith parameters []
+2020-02-02 19:28:25,968 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testDeleteLastTeam Failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="icon-add icon-sm _2aV_KY1gTq1qWc"></span> is not clickable at point (245, 213). Other element would receive the click: <form class="_2vrbr9OyhcQOwQ">...</form>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+2020-02-02 19:28:26,330 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664506329.png
+2020-02-02 19:28:26,331 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastTeam
+2020-02-02 19:28:31,573 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test renameLastTeamwith parameters []
+2020-02-02 19:28:32,877 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] renameLastTeam Failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li data-test-id="home-team-tab-section-5e26224da6a25316c5014682" class="pgEbaAFZBA0N5R">...</li> is not clickable at point (136, 500). Other element would receive the click: <textarea id="1580664480610-create-team-org-description" rows="6" class="_15aIJYNKhrO4vB" placeholder="Our team organizes everything here."></textarea>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b2c2038c0334c2b512064bff0539603
+2020-02-02 19:28:33,355 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580664513353.png
+2020-02-02 19:28:33,356 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test renameLastTeam

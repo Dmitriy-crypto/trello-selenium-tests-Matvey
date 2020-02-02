@@ -60,7 +60,7 @@ public class TeamCreationTests extends TestBase {
         app.getTeam().returnToHomePage();
         app.getTeam().pause(2000);
         int after = app.getTeam().getTeamsCount();
-        Assert.assertEquals(after, before + 1);
+        Assert.assertEquals(after, before +1);
     }
 
 
