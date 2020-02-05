@@ -14,6 +14,7 @@ public class TeamHelper extends HelperBase{
     public void createTeamFromMainPage() throws InterruptedException {
         int before = getTeamsCount();
         clickCreateTeam();
+        pause(2000);
         fillTeamCreationForm(new TeamData()
                         .withTeamName("teamName")
                 .withTeamDescription("teamDescription"));

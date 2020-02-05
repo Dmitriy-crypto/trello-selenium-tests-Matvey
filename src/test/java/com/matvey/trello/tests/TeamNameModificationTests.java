@@ -25,6 +25,7 @@ public class TeamNameModificationTests extends TestBase {
         app.getTeam().pause(4000);
         app.getTeam().clickEditTeamProfile();
         app.getTeam().type(By.xpath("//input[@name='displayName']"),"Modified teamname"+System.currentTimeMillis());
+        app.getTeam().pause(2000);
         app.getTeam().type(By.xpath("//input[@name='name']"),"Modified shortname"+System.currentTimeMillis());
         app.getTeam().clickSubmit();
         app.getTeam().pause(4000);

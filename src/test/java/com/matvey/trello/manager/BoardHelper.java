@@ -23,6 +23,7 @@ public class BoardHelper extends HelperBase{
 
     public void choosePublicBoard() throws InterruptedException {
         click(By.xpath("//button[@class='subtle-chooser-trigger unstyled-button vis-chooser-trigger']"));
+        pause(2000);
         click(By.xpath("//div[@class='pop-over mod-no-header is-shown']//li[2]"));
         pause(2000);
         clickSubmitPublicBoard();
@@ -70,6 +71,7 @@ public class BoardHelper extends HelperBase{
 
     public void deleteLastBoard() throws InterruptedException {
         int before = getBoardsCount();
+        pause(4000);
         if (before <= 1) {
             System.out.println("No boards found");
         } else {
@@ -85,7 +87,9 @@ public class BoardHelper extends HelperBase{
             }
             else
                 goBack();
+            pause(2000);
             moreButton();
+            pause(2000);
             permanentlyDeleteBoard();
             pause(5000);
             returnToHomePage();
@@ -99,6 +103,7 @@ public class BoardHelper extends HelperBase{
     public void createBoardFromMainPage() throws InterruptedException {
         int before = getBoardsCount();
         clickCreateNewBoard();
+        pause(2000);
         fillBoardName(new BoardData("Board from main page" + System.currentTimeMillis()));
         choosePublicBoard();
         pause(2000);
