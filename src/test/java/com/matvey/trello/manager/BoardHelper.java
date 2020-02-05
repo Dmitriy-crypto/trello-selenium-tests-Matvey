@@ -74,6 +74,7 @@ public class BoardHelper extends HelperBase{
             System.out.println("No boards found");
         } else {
             clickLastBoard();
+            pause(4000);
             if(!menuButtonPresent()){
                 clickMenuButton();
                 moreButton();
@@ -91,6 +92,7 @@ public class BoardHelper extends HelperBase{
             int actualRes = getBoardsCount();
             int expectedRes = before - 1;
             Assert.assertEquals(actualRes, expectedRes);
+            pause(3000);
         }
     }
 
@@ -103,6 +105,7 @@ public class BoardHelper extends HelperBase{
         submitCreateBoard();
         pause(2000);
         returnToHomePage();
+        pause(2000);
         int actualRes = getBoardsCount();
         int expectedRes = before+1;
         Assert.assertEquals(actualRes,expectedRes);
