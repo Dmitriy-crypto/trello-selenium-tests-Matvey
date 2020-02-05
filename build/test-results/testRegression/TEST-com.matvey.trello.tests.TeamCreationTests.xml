@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T17:40:05" hostname="LAPTOP-A6DBDQTL" time="8.599">
+  <properties/>
+  <testcase name="testCreateTeamFromMainPage" classname="com.matvey.trello.tests.TeamCreationTests" time="8.599"/>
+  <system-out><![CDATA[19:40:05.931 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testCreateTeamFromMainPagewith parameters []
+19:40:14.545 [Test worker] INFO  com.matvey.trello.utils.Listener - testCreateTeamFromMainPage Passed successfully
+19:40:14.545 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testCreateTeamFromMainPage
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

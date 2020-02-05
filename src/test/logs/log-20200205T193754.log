@@ -1,0 +1,18 @@
+2020-02-05 19:38:32,569 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testLogInWithAtlassianAccwith parameters []
+2020-02-05 19:39:22,217 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testLogInWithAtlassianAcc Passed successfully
+2020-02-05 19:39:22,218 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testLogInWithAtlassianAcc
+2020-02-05 19:39:22,220 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-05 19:39:31,321 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testCreateBoardFromMainPage Passed successfully
+2020-02-05 19:39:31,322 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateBoardFromMainPage
+2020-02-05 19:39:31,323 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastBoardwith parameters []
+2020-02-05 19:40:05,917 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testDeleteLastBoard Passed successfully
+2020-02-05 19:40:05,918 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastBoard
+2020-02-05 19:40:05,931 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPagewith parameters []
+2020-02-05 19:40:14,545 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testCreateTeamFromMainPage Passed successfully
+2020-02-05 19:40:14,545 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPage
+2020-02-05 19:40:25,908 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test renameLastTeamwith parameters []
+2020-02-05 19:40:42,857 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] renameLastTeam Passed successfully
+2020-02-05 19:40:42,858 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test renameLastTeam
+2020-02-05 19:40:42,859 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastTeamwith parameters []
+2020-02-05 19:41:06,777 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testDeleteLastTeam Passed successfully
+2020-02-05 19:41:06,777 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastTeam

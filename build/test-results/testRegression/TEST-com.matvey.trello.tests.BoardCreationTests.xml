@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.BoardCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T17:39:22" hostname="LAPTOP-A6DBDQTL" time="9.093">
+  <properties/>
+  <testcase name="testCreateBoardFromMainPage" classname="com.matvey.trello.tests.BoardCreationTests" time="9.093"/>
+  <system-out><![CDATA[19:39:22.220 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testCreateBoardFromMainPagewith parameters []
+19:39:31.321 [Test worker] INFO  com.matvey.trello.utils.Listener - testCreateBoardFromMainPage Passed successfully
+19:39:31.322 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testCreateBoardFromMainPage
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

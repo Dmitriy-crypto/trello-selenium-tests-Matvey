@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T17:39:31" hostname="LAPTOP-A6DBDQTL" time="34.586">
+  <properties/>
+  <testcase name="testDeleteLastBoard" classname="com.matvey.trello.tests.BoardDeletionTests" time="34.586"/>
+  <system-out><![CDATA[19:39:31.323 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testDeleteLastBoardwith parameters []
+19:40:05.917 [Test worker] INFO  com.matvey.trello.utils.Listener - testDeleteLastBoard Passed successfully
+19:40:05.918 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testDeleteLastBoard
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

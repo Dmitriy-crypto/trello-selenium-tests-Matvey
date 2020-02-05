@@ -3,9 +3,12 @@
 <suite name="Trello" verbose="1" >
     <test name="SmokeTest" >
         <classes>
-            <class name="com.matvey.trello.tests.TeamDeletionTests" />
-            <class name="com.matvey.trello.tests.TeamNameModificationTests" />
+            <class name="com.matvey.trello.tests.LoginTest" />
+            <class name="com.matvey.trello.tests.BoardCreationTests" />
+            <class name="com.matvey.trello.tests.BoardDeletionTests" />
             <class name="com.matvey.trello.tests.TeamCreationTests" />
+            <class name="com.matvey.trello.tests.TeamNameModificationTests" />
+            <class name="com.matvey.trello.tests.TeamDeletionTests" />
         </classes>
     </test>
 </suite>

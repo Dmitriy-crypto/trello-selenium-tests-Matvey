@@ -1,0 +1,6 @@
+2020-02-05 19:37:43,593 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-05 19:37:44,242 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastBoardwith parameters []
+2020-02-05 19:37:44,250 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testLogInWithAtlassianAccwith parameters []
+2020-02-05 19:37:44,260 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPagewith parameters []
+2020-02-05 19:37:44,275 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastTeamwith parameters []
+2020-02-05 19:37:44,288 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test renameLastTeamwith parameters []
