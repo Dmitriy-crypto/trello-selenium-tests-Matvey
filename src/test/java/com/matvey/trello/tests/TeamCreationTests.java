@@ -45,7 +45,7 @@ public class TeamCreationTests extends TestBase {
 
         }
     }
-    @Test(dataProvider = "validTeamsCSV")
+    @Test(enabled=false)//(dataProvider = "validTeamsCSV")
     public void testCreateTeamFromMainPageWithCSV(TeamData team) throws InterruptedException {
         int before = app.getTeam().getTeamsCount();
         app.getTeam().pause(2000);
@@ -92,7 +92,7 @@ public class TeamCreationTests extends TestBase {
 
 
 
-    @Test(enabled=false)
+    @Test
     public void testCreateTeamFromMainPage() throws InterruptedException {
         app.getTeam().createTeamFromMainPage();
 
