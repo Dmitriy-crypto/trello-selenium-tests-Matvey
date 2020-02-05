@@ -47,8 +47,9 @@ public class SessionHelper extends HelperBase{
                 (By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 
-    public void clickLogOut() {
+    public void clickLogOut() throws InterruptedException {
         click(By.cssSelector("[data-test-id='header-member-menu-logout']"));
+        pause(8000);
     }
 
     public void clickOnAvatar() {
@@ -69,7 +70,7 @@ public class SessionHelper extends HelperBase{
     }
 
 
-    public void logout() {
+    public void logout() throws InterruptedException {
         clickOnAvatar();
         clickLogOut();
     }
