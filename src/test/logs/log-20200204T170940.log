@@ -1,0 +1,3 @@
+2020-02-04 17:09:49,988 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastBoardwith parameters []
+2020-02-04 17:10:59,624 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testDeleteLastBoard Passed successfully
+2020-02-04 17:10:59,651 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastBoard

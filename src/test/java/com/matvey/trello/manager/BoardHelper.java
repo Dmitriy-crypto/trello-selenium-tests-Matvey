@@ -86,7 +86,7 @@ public class BoardHelper extends HelperBase{
                 goBack();
             moreButton();
             permanentlyDeleteBoard();
-            pause(3000);
+            pause(5000);
             returnToHomePage();
             int actualRes = getBoardsCount();
             int expectedRes = before - 1;

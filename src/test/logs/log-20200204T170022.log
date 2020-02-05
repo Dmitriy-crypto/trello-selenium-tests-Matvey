@@ -1,0 +1,13 @@
+2020-02-04 17:00:32,557 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-04 17:07:04,142 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateBoardFromMainPage Failed
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '192.168.0.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bd517d7b8a81e1fd0618b923c8cf44ad
+2020-02-04 17:07:05,260 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580828825251.png
+2020-02-04 17:07:05,261 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateBoardFromMainPage

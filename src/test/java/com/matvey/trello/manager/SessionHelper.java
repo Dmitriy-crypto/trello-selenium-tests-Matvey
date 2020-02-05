@@ -97,23 +97,22 @@ public class SessionHelper extends HelperBase{
 
     public void addAvatarImageAndClose() throws InterruptedException {
         new Actions(wd)
-                .moveToElement(wd.findElement(By.cssSelector("[data-test-selector='profile-avatar']"))).build().perform();
-        pause(3000);
+                .moveToElement(wd.findElement(By.cssSelector(".sc-kjoXOD.iWbaSk"))).perform();
         click(By.cssSelector("[data-test-selector='profile-hover-info']"));
         if (isElementPresent(By.cssSelector("[role=menu]"))) {
             click(By.xpath("//*[@role='menu']//span[@role='menuitem'][1]"));
         }
         attach(By.id("image-input"), new File("C:/Users/Matvey/Desktop/for tests avatar trello/boat.png"));
         click(By.xpath("//*[contains(text(),'Upload')]"));
-        pause(3000);
+        pause(5000);
         wd.close();
-        pause(3000);
+        pause(5000);
         ArrayList<String> availableWindows = new ArrayList(wd.getWindowHandles());
         if (!availableWindows.isEmpty()) {
             wd.switchTo().window(availableWindows.get(0));
-            pause(3000);
+            pause(5000);
             wd.navigate().refresh();
-            pause(3000);
+            pause(5000);
         }
     }
 

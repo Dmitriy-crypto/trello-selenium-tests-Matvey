@@ -1,0 +1,14 @@
+2020-02-04 16:55:26,737 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-04 16:56:35,252 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateBoardFromMainPage Failed
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '10.75.10.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c10bc8254b2a6b510a5cb722c80ead0
+2020-02-04 16:56:35,682 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580828195661.png
+2020-02-04 16:56:35,683 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateBoardFromMainPage

@@ -25,7 +25,7 @@ public class BoardDeletionTests extends TestBase {
     @AfterClass
     public void postActions() throws InterruptedException {
         int boardsCount = app.getBoard().getBoardsCount();
-        if(boardsCount>4){
+        if(boardsCount>5){
             app.getBoard().deleteLastBoard();
         }
 }

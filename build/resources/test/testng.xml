@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Trello" verbose="1" >
+    <test name="SmokeTest" >
+        <classes>
+            <class name="com.matvey.trello.tests.TeamDeletionTests" />
+            <class name="com.matvey.trello.tests.TeamNameModificationTests" />
+            <class name="com.matvey.trello.tests.TeamCreationTests" />
+        </classes>
+    </test>
+</suite>
