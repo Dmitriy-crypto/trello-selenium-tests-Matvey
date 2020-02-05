@@ -14,11 +14,11 @@ public class TeamHelper extends HelperBase{
     public void createTeamFromMainPage() throws InterruptedException {
         int before = getTeamsCount();
         clickCreateTeam();
-        pause(2000);
+        pause(4000);
         fillTeamCreationForm(new TeamData()
                         .withTeamName("teamName")
                 .withTeamDescription("teamDescription"));
-        pause(2000);
+        pause(4000);
         clickSubmit();
         pause(2000);
         laterButton();

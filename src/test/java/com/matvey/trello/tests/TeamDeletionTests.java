@@ -18,6 +18,7 @@ public class TeamDeletionTests extends TestBase {
 
     @Test
     public void testDeleteLastTeam() throws InterruptedException {
+
         app.getTeam().createTeamFromMainPage();
         app.getTeam().pause(4000);
         app.getTeam().deleteLastTeam();
