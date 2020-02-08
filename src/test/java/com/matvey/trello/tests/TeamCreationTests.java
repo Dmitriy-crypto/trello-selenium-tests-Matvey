@@ -102,7 +102,7 @@ public class TeamCreationTests extends TestBase {
     @AfterClass
     public void postActions() throws InterruptedException {
         int teamsCount = app.getTeam().getTeamsCount();
-        if(teamsCount>2){
+        while(teamsCount>2){
             app.getTeam().deleteLastTeam();
         }
 

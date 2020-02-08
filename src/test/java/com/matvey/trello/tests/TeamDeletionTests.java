@@ -29,7 +29,7 @@ public class TeamDeletionTests extends TestBase {
     public void postActions() throws InterruptedException {
         int teamsCount = app.getTeam().getTeamsCount();
         app.getTeam().pause(4000);
-        if(teamsCount>2){
+        while(teamsCount>2){
             app.getTeam().deleteLastTeam();
         }
     }

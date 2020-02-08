@@ -89,7 +89,7 @@ public class SessionHelper extends HelperBase{
         ArrayList<String>availableWindows = new ArrayList(wd.getWindowHandles());
         if(availableWindows.isEmpty()){
             wd.switchTo().window(availableWindows.get(1));
-            pause(5000);
+//            pause(2000);
         }
 
 
@@ -97,8 +97,16 @@ public class SessionHelper extends HelperBase{
     }
 
     public void addAvatarImageAndClose() throws InterruptedException {
+        click(By.cssSelector(".sc-erNlkL.hTGqoO"));// TEST CLICK ON "Learn more about your profile and visibility"
+        WebElement avatar = wd
+                .findElement(By.cssSelector("[data-test-selector='profile-avatar']"));
         new Actions(wd)
-                .moveToElement(wd.findElement(By.cssSelector(".sc-kjoXOD.iWbaSk"))).perform();
+                .moveToElement(avatar).perform();
+//        new Actions(wd)
+//                .moveToElement(wd.findElement(By.cssSelector(".sc-kjoXOD.iWbaSk"))).perform();
+//                .moveToElement(wd.findElement(By.cssSelector("[data-test-selector='profile-avatar']"))).perform();
+//        pause(2000);
+        click(By.cssSelector(".sc-erNlkL.hTGqoO"));
         click(By.cssSelector("[data-test-selector='profile-hover-info']"));
         if (isElementPresent(By.cssSelector("[role=menu]"))) {
             click(By.xpath("//*[@role='menu']//span[@role='menuitem'][1]"));
