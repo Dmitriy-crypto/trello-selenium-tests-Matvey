@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class SessionHelper extends HelperBase{
 
@@ -84,12 +85,16 @@ public class SessionHelper extends HelperBase{
     }
 
     public void goToAtlassianAccount() throws InterruptedException {
-        click(By.cssSelector("[href $= manage-profile]"));
         String trellow = wd.getWindowHandle();
-        ArrayList<String>availableWindows = new ArrayList(wd.getWindowHandles());
+        System.out.println(trellow);
+        click(By.cssSelector("[href $= manage-profile]"));
+
+       List<String> availableWindows = new ArrayList(wd.getWindowHandles());
         if(availableWindows.isEmpty()){
             wd.switchTo().window(availableWindows.get(1));
 //            pause(2000);
+            String atlassian = wd.getWindowHandle();
+            System.out.println(atlassian);
         }
 
 

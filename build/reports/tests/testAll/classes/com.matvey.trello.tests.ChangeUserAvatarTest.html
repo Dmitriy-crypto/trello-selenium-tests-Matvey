@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">27.033s</div>
+<div class="counter">28.010s</div>
 <p>duration</p>
 </div>
 </td>
@@ -80,10 +80,10 @@
   (Session info: chrome=80.0.3987.87)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-A6DBDQTL', ip: '192.168.0.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c8ad52d614d5012dddedbef7d12c31db
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d6ef3cbddcf790ec3588bf809a303fe
 *** Element info: {Using=css selector, value=.sc-erNlkL.hTGqoO}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -100,7 +100,7 @@ Session ID: c8ad52d614d5012dddedbef7d12c31db
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.matvey.trello.manager.HelperBase.click(HelperBase.java:23)
-	at com.matvey.trello.manager.SessionHelper.addAvatarImageAndClose(SessionHelper.java:101)
+	at com.matvey.trello.manager.SessionHelper.addAvatarImageAndClose(SessionHelper.java:103)
 	at com.matvey.trello.tests.ChangeUserAvatarTest.testChangeAvatar(ChangeUserAvatarTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -171,7 +171,7 @@ Session ID: c8ad52d614d5012dddedbef7d12c31db
 </thead>
 <tr>
 <td class="failures">testChangeAvatar</td>
-<td class="failures">27.033s</td>
+<td class="failures">28.010s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -179,22 +179,23 @@ Session ID: c8ad52d614d5012dddedbef7d12c31db
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:13:33.430 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testChangeAvatarwith parameters []
-15:14:09.366 [Test worker] INFO  com.matvey.trello.tests.TestBase - avatar before: 
-15:14:36.400 [Test worker] ERROR com.matvey.trello.utils.Listener - testChangeAvatar Failed
+<pre>18:27:29.564 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testChangeAvatarwith parameters []
+18:28:09.246 [Test worker] INFO  com.matvey.trello.tests.TestBase - avatar before: 
+CDwindow-97A6FC58EB5DC064A88C02161D0429FC
+18:28:37.261 [Test worker] ERROR com.matvey.trello.utils.Listener - testChangeAvatar Failed
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.sc-erNlkL.hTGqoO&quot;}
   (Session info: chrome=80.0.3987.87)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-A6DBDQTL', ip: '192.168.0.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c8ad52d614d5012dddedbef7d12c31db
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d6ef3cbddcf790ec3588bf809a303fe
 *** Element info: {Using=css selector, value=.sc-erNlkL.hTGqoO}
-15:14:36.705 [Test worker] INFO  c.m.t.manager.ApplicationManager - 
+18:28:37.869 [Test worker] INFO  c.m.t.manager.ApplicationManager - 
 
-Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1581167676699.png
-15:14:36.706 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testChangeAvatar
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1581265717858.png
+18:28:37.871 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testChangeAvatar
 </pre>
 </span>
 </div>
@@ -206,7 +207,7 @@ Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matve
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Feb 8, 2020 3:14:37 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Feb 9, 2020 6:28:38 PM</p>
 </div>
 </div>
 </body>
