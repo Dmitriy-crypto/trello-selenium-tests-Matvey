@@ -1,0 +1,15 @@
+2020-01-26 20:17:42,584 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testLogInWithAtlassianAccwith parameters []
+2020-01-26 20:18:02,877 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testLogInWithAtlassianAcc Failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#use"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bbbd289be0d68dc99a1b52abe94dceb8
+*** Element info: {Using=id, value=use}
+2020-01-26 20:18:03,164 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580062683158.png
+2020-01-26 20:18:03,165 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testLogInWithAtlassianAcc

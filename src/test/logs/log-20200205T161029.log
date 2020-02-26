@@ -1,0 +1,15 @@
+2020-02-05 16:10:40,171 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPagewith parameters []
+2020-02-05 16:11:33,195 ERROR [Test worker] c.m.t.u.Listener [Listener.java:25] testCreateTeamFromMainPage Failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-team-type-input']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A6DBDQTL', ip: '192.168.0.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Matvey\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b64f4b93c866f89319e0be536cb05b0d
+*** Element info: {Using=css selector, value=[data-test-id='header-create-team-type-input']}
+2020-02-05 16:11:33,569 INFO [Test worker] c.m.t.m.ApplicationManager [ApplicationManager.java:77] 
+
+Created screenshot: C:\Users\Matvey\Documents\GitHub\trello-selenium-tests-Matvey\src\test\screenshots\screen1580911893552.png
+2020-02-05 16:11:33,570 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPage

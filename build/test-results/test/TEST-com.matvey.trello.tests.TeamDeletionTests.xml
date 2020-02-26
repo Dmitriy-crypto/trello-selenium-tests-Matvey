@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.TeamDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T14:28:38" hostname="LAPTOP-A6DBDQTL" time="15.181">
+  <properties/>
+  <testcase name="testDeleteLastTeam" classname="com.matvey.trello.tests.TeamDeletionTests" time="15.181"/>
+  <system-out><![CDATA[16:27:59.719 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testDeleteLastTeamwith parameters []
+16:28:53.187 [Test worker] INFO  com.matvey.trello.utils.Listener - testDeleteLastTeam Passed successfully
+16:28:53.191 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testDeleteLastTeam
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

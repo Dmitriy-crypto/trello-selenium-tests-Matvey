@@ -1,0 +1,12 @@
+2020-01-26 18:56:41,273 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@51275074]
+2020-01-26 18:57:39,705 ERROR [Test worker] c.m.t.u.Listener [Listener.java:20] testCreateTeamFromMainPageWithCSV Failed
+java.lang.AssertionError: expected [8] but found [9]
+2020-01-26 18:57:39,706 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV
+2020-01-26 18:57:39,707 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@3d22c6ea]
+2020-01-26 18:57:55,367 ERROR [Test worker] c.m.t.u.Listener [Listener.java:20] testCreateTeamFromMainPageWithCSV Failed
+java.lang.AssertionError: expected [9] but found [10]
+2020-01-26 18:57:55,368 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV
+2020-01-26 18:57:55,369 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateTeamFromMainPageWithCSVwith parameters [com.matvey.trello.model.TeamData@5b6ebf79]
+2020-01-26 18:58:11,509 ERROR [Test worker] c.m.t.u.Listener [Listener.java:20] testCreateTeamFromMainPageWithCSV Failed
+java.lang.AssertionError: expected [10] but found [11]
+2020-01-26 18:58:11,510 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateTeamFromMainPageWithCSV

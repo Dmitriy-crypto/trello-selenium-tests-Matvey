@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T17:38:42" hostname="LAPTOP-A6DBDQTL" time="39.584">
+  <properties/>
+  <testcase name="testLogInWithAtlassianAcc" classname="com.matvey.trello.tests.LoginTest" time="39.584"/>
+  <system-out><![CDATA[19:38:32.569 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test testLogInWithAtlassianAccwith parameters []
+19:39:22.217 [Test worker] INFO  com.matvey.trello.utils.Listener - testLogInWithAtlassianAcc Passed successfully
+19:39:22.218 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test testLogInWithAtlassianAcc
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

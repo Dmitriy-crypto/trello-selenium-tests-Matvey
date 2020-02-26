@@ -1,0 +1,4 @@
+2020-01-26 19:02:53,726 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testDeleteLastTeamwith parameters []
+2020-01-26 19:04:09,359 ERROR [Test worker] c.m.t.u.Listener [Listener.java:20] testDeleteLastTeam Failed
+java.lang.AssertionError: expected [-1] but found [8]
+2020-01-26 19:04:09,360 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testDeleteLastTeam

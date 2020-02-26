@@ -1,0 +1,3 @@
+2020-02-04 17:08:11,114 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testCreateBoardFromMainPagewith parameters []
+2020-02-04 17:08:59,357 INFO [Test worker] c.m.t.u.Listener [Listener.java:19] testCreateBoardFromMainPage Passed successfully
+2020-02-04 17:08:59,358 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:32] Stop test testCreateBoardFromMainPage

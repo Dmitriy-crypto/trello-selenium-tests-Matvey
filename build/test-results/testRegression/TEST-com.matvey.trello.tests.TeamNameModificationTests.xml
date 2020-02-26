@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.matvey.trello.tests.TeamNameModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-05T17:40:25" hostname="LAPTOP-A6DBDQTL" time="16.939">
+  <properties/>
+  <testcase name="renameLastTeam" classname="com.matvey.trello.tests.TeamNameModificationTests" time="16.939"/>
+  <system-out><![CDATA[19:40:25.908 [Test worker] INFO  com.matvey.trello.tests.TestBase - Start test renameLastTeamwith parameters []
+19:40:42.857 [Test worker] INFO  com.matvey.trello.utils.Listener - renameLastTeam Passed successfully
+19:40:42.858 [Test worker] INFO  com.matvey.trello.tests.TestBase - Stop test renameLastTeam
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,2 @@
+2020-02-04 17:26:09,223 INFO [Test worker] c.m.t.t.TestBase [TestBase.java:25] Start test testChangeAvatarwith parameters []
+2020-02-04 17:26:46,776 INFO [Test worker] c.m.t.t.TestBase [ChangeUserAvatarTest.java:21] avatar before: 
